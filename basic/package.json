@@ -15,7 +15,7 @@
     "image-webpack-loader": "^3.2.0",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
-    "webpack": "^1ind.14.0"
+    "webpack": "^1.14.0"
   },
   "scripts": {
     "start": "webpack --watch",
