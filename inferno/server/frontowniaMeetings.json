@@ -1,0 +1,28 @@
+{
+  "meetings": [
+    {
+      "name": "Frontownia #9",
+      "place": "Cognifide Polska",
+      "data": "22.03.2017",
+      "time": "18:00"
+    },
+    {
+      "name": "Frontownia #8",
+      "place": "Cognifide Polska",
+      "data": "16.11.2016",
+      "time": "18:00"
+    },
+    {
+      "name": "Frontownia #7",
+      "place": "Cognifide Polska",
+      "data": "8.06.2017",
+      "time": "18:00"
+    },
+    {
+      "name": "Frontownia #6",
+      "place": "Cognifide Polska",
+      "data": "6.04.2017",
+      "time": "18:00"
+    }
+  ]
+}
