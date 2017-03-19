@@ -6,5 +6,9 @@ export const setMeetingsData = (data) => ({
 });
 
 export const fetchMeetingsData = () => ({
-  type: constants.FETCH_MEETINS_DATA
+  type: constants.FETCH_MEETINGS_DATA
+});
+
+export const clearMeetingsData = () => ({
+  type: constants.CLEAR_MEETINGS_DATA
 });

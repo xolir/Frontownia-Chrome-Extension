@@ -14,7 +14,6 @@ export default (WrappedComponent) => (
       };
 
       this.chromeBackgroundConnection.onMessage.addListener((appState) => {
-        console.log('message received', appState);
         this.setState({
           appState: appState
         })

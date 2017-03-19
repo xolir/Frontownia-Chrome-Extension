@@ -11,6 +11,6 @@ const fetchMeetingsData = function*() {
 };
 
 export const mySaga = function*() {
-  yield takeEvery(constants.FETCH_MEETINS_DATA, fetchMeetingsData);
+  yield takeEvery(constants.FETCH_MEETINGS_DATA, fetchMeetingsData);
 };
 

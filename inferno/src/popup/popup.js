@@ -1,10 +1,4 @@
-import { fetchMeetingsData } from '../background/actions/actions'
+import Inferno from 'inferno';
+import PopupContainer from './containers/PopupContainer';
 
-const chromeBackgroundConnection = chrome.runtime.connect();
-
-document
-  .getElementById('get-data-button')
-  .addEventListener('click', () => {
-    const fetchDataMessage = fetchMeetingsData();
-    chromeBackgroundConnection.postMessage(fetchDataMessage);
-  });
+Inferno.render(<PopupContainer />, document.getElementById('app'));

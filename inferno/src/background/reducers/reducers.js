@@ -10,6 +10,10 @@ export default (state = initialState, action) => {
       return Object.assign({}, state, {
         meetings: action.data.meetings
       });
+    case constants.CLEAR_MEETINGS_DATA:
+      return Object.assign({}, state, {
+        meetings: []
+      });
     default:
       return state;
   }
