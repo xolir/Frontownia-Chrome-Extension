@@ -2,6 +2,7 @@ import Inferno from 'inferno';
 import Component from 'inferno-component';
 
 import ActionButton from '../components/ActionButton';
+import VisitedPage from '../components/VisitedPage';
 import withConnection from '../../common/connectors/backgroundConnector';
 
 import {
@@ -11,7 +12,7 @@ import {
 
 const styles = {
   margin: '0',
-  width: '100px',
+  width: '400px',
 };
 
 class PopUpContainer extends Component {
@@ -24,10 +25,14 @@ class PopUpContainer extends Component {
     this.props.connection.postMessage(clearMeetingsDataMessage)
   };
   render() {
+   const visitedPages = this.props.appState.visitedPages || [];
     return (
       <div style={styles}>
         <ActionButton action={() => this.showMeetings()} text={"Show meetings"}/>
         <ActionButton action={() => this.hideMeetings()} text={"Hide meetings"}/>
+        {
+          visitedPages.map(page => (<VisitedPage url={page.url} />))
+        }
       </div>
     )
   }
