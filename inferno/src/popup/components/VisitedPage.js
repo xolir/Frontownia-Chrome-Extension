@@ -8,6 +8,6 @@ const styles = {
   border: 'none',
 };
 
-export default ({ url }) => (
-  <p>{url}</p>
+export default ({ page }) => (
+  <p>{page.url}</p>
 )
