@@ -1,17 +1,17 @@
 import { store } from './store/store';
 
+import { PAGE_LOAD_COMPLETED_STATUS } from './constants/constants';
+import { logUserPage } from './actions/actions';
+
 let connectedPorts = [];
 
 store.subscribe(() => {
-  console.log(connectedPorts);
   connectedPorts.forEach((port) => {
-    console.log(port);
     port.postMessage(store.getState());
   });
 });
 
 chrome.runtime.onConnect.addListener((newPort) => {
-  console.log('connected ports', connectedPorts);
   connectedPorts.push(newPort);
 
   newPort.postMessage(store.getState());
@@ -27,4 +27,10 @@ chrome.runtime.onConnect.addListener((newPort) => {
           : port.sender.url !== newPort.sender.url
     );
   });
+});
+
+chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (changeInfo.status === PAGE_LOAD_COMPLETED_STATUS) {
+    store.dispatch(logUserPage(tab.url))
+  }
 });

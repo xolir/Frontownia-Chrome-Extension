@@ -12,3 +12,8 @@ export const fetchMeetingsData = () => ({
 export const clearMeetingsData = () => ({
   type: constants.CLEAR_MEETINGS_DATA
 });
+
+export const logUserPage = (pageURL) => ({
+  type: constants.LOG_USER_VISITED_PAGE,
+  pageURL
+});
