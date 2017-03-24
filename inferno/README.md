@@ -1,8 +1,12 @@
 ## Quick start
-```npm install```
+1. ```npm install```
 
-```npm run build```
+2. ```npm run build```
 
-open ```chrome://extension``` url in your browser
+3. Start local mock server using ```npm run server``` command
 
-use ```load unpacked extension ```button and select ```dist``` folder 
+4. Open ```chrome://extension``` url in your browser
+
+5. Use ```load unpacked extension ``` button and select ```dist``` folder 
+
+

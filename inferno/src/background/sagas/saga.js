@@ -10,7 +10,7 @@ const fetchMeetingsData = function*() {
   yield put(setMeetingsData(data));
 };
 
-export const mySaga = function*() {
+export const rootSaga = function*() {
   yield takeEvery(constants.FETCH_MEETINGS_DATA, fetchMeetingsData);
 };
 

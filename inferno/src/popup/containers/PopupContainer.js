@@ -30,6 +30,7 @@ class PopUpContainer extends Component {
       <div style={styles}>
         <ActionButton action={() => this.showMeetings()} text={"Show meetings"}/>
         <ActionButton action={() => this.hideMeetings()} text={"Hide meetings"}/>
+        <h2>Visited pages</h2>
         {
           visitedPages.map(page => (<VisitedPage page={page} />))
         }
