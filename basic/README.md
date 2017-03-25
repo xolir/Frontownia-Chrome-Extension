@@ -1,8 +1,8 @@
 ## Quick start
-```npm install```
+* Run ```npm install```
 
-```npm run build```
+* Run ```npm run build```
 
-open ```chrome://extension``` url in your browser
+* Navigate to  ```chrome://extensions``` url in your browser
 
-use ```load unpacked extension ```button and select ```dist``` folder 
+* Use ```load unpacked extension ```button and select ```basic``` folder within this this example.

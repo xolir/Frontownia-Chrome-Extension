@@ -1,12 +1,13 @@
 ## Quick start
-1. ```npm install```
+* Run ```npm install```
 
-2. ```npm run build```
+* Run  ```npm run build```
 
-3. Start local mock server using ```npm run server``` command
+* Start local mock server using ```npm run server``` command
 
-4. Open ```chrome://extension``` url in your browser
+* Open ```chrome://extensions``` url in your browser
 
-5. Use ```load unpacked extension ``` button and select ```dist``` folder 
+* Use ```load unpacked extension ```button and select ```inferno``` folder within this this example.
+
 
 

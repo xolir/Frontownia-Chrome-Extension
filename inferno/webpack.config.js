@@ -15,13 +15,6 @@ module.exports = {
         loader: 'babel-loader',
         exclude: 'node_modules/'
       },
-      {
-        test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-          'file?name=../img/[name].[ext]',
-          'image-webpack?bypassOnDebug&opting.optimizationLevel=7&gfsicle.interlaced=false'
-        ]
-      }
     ]
   },
   devtool: 'source-map'
