@@ -1,4 +1,4 @@
-#Frontownia chrome extensions
+# Frontownia chrome extensions
 
 For detailed instructions of installation and usage visit each folder.
 ### Basic 
